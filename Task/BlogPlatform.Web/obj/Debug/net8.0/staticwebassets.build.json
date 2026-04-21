@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "uX2BmWPyeuTGqCyjOHYQTjaT/26uW+c9GroWfjEptsE=",
+  "Source": "BlogPlatform.Web",
+  "BasePath": "_content/BlogPlatform.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "BlogPlatform.Web\\wwwroot",
+      "Source": "BlogPlatform.Web",
+      "ContentRoot": "C:\\Users\\saraf\\source\\repos\\Platform\\Task\\BlogPlatform.Web\\wwwroot\\",
+      "BasePath": "_content/BlogPlatform.Web",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\saraf\\source\\repos\\Platform\\Task\\BlogPlatform.Web\\wwwroot\\contracts\\auth.yaml",
+      "SourceId": "BlogPlatform.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\saraf\\source\\repos\\Platform\\Task\\BlogPlatform.Web\\wwwroot\\",
+      "BasePath": "_content/BlogPlatform.Web",
+      "RelativePath": "contracts/auth.yaml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\contracts\\auth.yaml"
+    },
+    {
+      "Identity": "C:\\Users\\saraf\\source\\repos\\Platform\\Task\\BlogPlatform.Web\\wwwroot\\contracts\\category.yaml",
+      "SourceId": "BlogPlatform.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\saraf\\source\\repos\\Platform\\Task\\BlogPlatform.Web\\wwwroot\\",
+      "BasePath": "_content/BlogPlatform.Web",
+      "RelativePath": "contracts/category.yaml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\contracts\\category.yaml"
+    },
+    {
+      "Identity": "C:\\Users\\saraf\\source\\repos\\Platform\\Task\\BlogPlatform.Web\\wwwroot\\contracts\\post.yaml",
+      "SourceId": "BlogPlatform.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\saraf\\source\\repos\\Platform\\Task\\BlogPlatform.Web\\wwwroot\\",
+      "BasePath": "_content/BlogPlatform.Web",
+      "RelativePath": "contracts/post.yaml",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\contracts\\post.yaml"
+    }
+  ]
+}

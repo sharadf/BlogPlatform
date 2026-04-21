@@ -1,0 +1,57 @@
+openapi: 3.0.0
+info:
+  title: Auth API
+  version: 1.0.0
+
+paths:
+  /api/auth/register:
+    post:
+      summary: Register user
+      parameters:
+        - in: query
+          name: role
+          schema:
+            type: string
+            example: Admin
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/RegisterDto'
+      responses:
+        '200':
+          description: JWT token
+
+  /api/auth/login:
+    post:
+      summary: Login user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LoginDto'
+      responses:
+        '200':
+          description: JWT token
+
+components:
+  schemas:
+    RegisterDto:
+      type: object
+      properties:
+        userName:
+          type: string
+        email:
+          type: string
+        password:
+          type: string
+
+    LoginDto:
+      type: object
+      properties:
+        email:
+          type: string
+        password:
+          type: string

@@ -1,0 +1,85 @@
+openapi: 3.0.0
+info:
+  title: Post API
+  version: 1.0.0
+
+paths:
+  /api/post:
+    get:
+      summary: Get all posts
+      responses:
+        '200':
+          description: List of posts
+
+    post:
+      summary: Create post (Admin)
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreatePostDto'
+      responses:
+        '200':
+          description: Created
+
+  /api/post/{id}:
+    get:
+      summary: Get post by id
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Post
+
+    put:
+      summary: Update post (Admin)
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Updated
+
+    delete:
+      summary: Delete post (Admin)
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Deleted
+
+components:
+  schemas:
+    CreatePostDto:
+      type: object
+      properties:
+        title:
+          type: string
+        content:
+          type: string
+        imageUrl:
+          type: string
+        categoryIds:
+          type: array
+          items:
+            type: integer
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

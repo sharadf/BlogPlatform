@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\BlogPlatform.Business",
+    "\\BlogPlatform.Business\\Data",
+    "\\BlogPlatform.Business\\Seed",
+    "\\BlogPlatform.Core\\DTOs",
+    "\\BlogPlatform.Core\\DTOs\\Category",
+    "\\BlogPlatform.Core\\DTOs\\Post",
+    "\\BlogPlatform.Core\\Entities",
+    "\\BlogPlatform.Core\\Interfaces",
+    "\\BlogPlatform.Web"
+  ],
+  "SelectedNode": "\\BlogPlatform.Web\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,74 @@
+openapi: 3.0.0
+info:
+  title: Category API
+  version: 1.0.0
+
+paths:
+  /api/category:
+    get:
+      summary: Get all categories
+      responses:
+        '200':
+          description: List of categories
+
+    post:
+      summary: Create category (Admin)
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CategoryDto'
+      responses:
+        '200':
+          description: Created
+
+  /api/category/{id}:
+    put:
+      summary: Update category (Admin)
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CategoryDto'
+      responses:
+        '200':
+          description: Updated
+
+    delete:
+      summary: Delete category (Admin)
+      security:
+        - bearerAuth: []
+      parameters:
+        - in: path
+          name: id
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Deleted
+
+components:
+  schemas:
+    CategoryDto:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
